@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Screens/pestana_resumen.dart';
+import 'Screens/pestana_registros.dart';
 
 // 👇 pantallas mock por ahora
 class RegistrosPage extends StatelessWidget {
@@ -45,7 +46,7 @@ class _HomePageState extends State<HomePage> {
 
   final List<Widget> _pages = [
     const PestanaResumen(),
-    const RegistrosPage(),
+    const PestanaRegistros(),
     const IngresosPage(),
     const GastosPage(),
     const DocumentosPage(),
@@ -71,6 +72,7 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.dashboard),
             label: 'Resumen',
+            
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.list),
